@@ -3,7 +3,7 @@
 Overview
 ========
 
- * User profile Service: Provides information like movie ratings, title, etc.
+ * User profile Service: Provides the url picture of a user.
  
 
 

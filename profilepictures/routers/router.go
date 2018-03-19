@@ -6,7 +6,7 @@ import (
 
 func InitRoutes() *mux.Router {
 	router := mux.NewRouter().StrictSlash(false)
-	// Routes for the Movie entity
-	router = setMovieRouters(router)
+	// Routes for the profile picture entity
+	router = setProfilePictureRouters(router)
 	return router
 }
