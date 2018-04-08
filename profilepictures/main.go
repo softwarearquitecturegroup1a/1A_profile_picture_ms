@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepicture/common"
-	"github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepicture/routers"
+	"github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepictures/common"
+	"github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepictures/routers"
 )
 
 // Entry point for the program

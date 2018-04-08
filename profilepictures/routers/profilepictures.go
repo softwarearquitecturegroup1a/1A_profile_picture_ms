@@ -2,7 +2,7 @@ package routers
 
 import (
 	"github.com/gorilla/mux"
-	"github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepicture/controllers"
+	"github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepictures/controllers"
 )
 
 func setProfilepictureRouters(router *mux.Router) *mux.Router {

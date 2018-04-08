@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepicture/models"
+	"github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepictures/models"
 )
 
 type (
