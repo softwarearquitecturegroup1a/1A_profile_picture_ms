@@ -2,7 +2,6 @@ package data
 
 import (
 	"time"
-
 	"github.com/softwarearquitecturegroup1a/profilepictures/profilepictures/models"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
@@ -32,6 +31,11 @@ func (r *ProfilePictureRepository) Create(ProfilePicture *models.ProfilePicture)
 
 func (r *ProfilePictureRepository) GetById(id string) (ProfilePicture models.ProfilePicture, err error) {
 	err = r.C.FindId(bson.ObjectIdHex(id)).One(&ProfilePicture)
+	return
+}
+
+func (r *ProfilePictureRepository) GetByIdStudent(id string) (ProfilePicture models.ProfilePicture, err error) {
+	err = r.C.Find(bson.M{"idStudent": id} ).One(&ProfilePicture)
 	return
 }
 

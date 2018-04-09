@@ -71,7 +71,7 @@ func GetProfilePictureById(w http.ResponseWriter, r *http.Request) {
 	repo := &data.ProfilePictureRepository{c}
 
 	// Get ProfilePicture by id
-	ProfilePicture, err := repo.GetById(id)
+	ProfilePicture, err := repo.GetByIdStudent(id)
 	if err != nil {
 		if err == mgo.ErrNotFound {
 			w.WriteHeader(http.StatusNotFound)

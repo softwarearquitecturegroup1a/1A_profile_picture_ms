@@ -1,24 +1,17 @@
 version: '2'
 services:
-  proxy:
-    image: jwilder/nginx-proxy
-    container_name: profile-picture-ms
-    volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro
-    ports:
-      - "80:80"
-
   profilepictures:
     build: ./profilepictures
     image: profilepictures/profilepictures
-    container_name: profilepictures-profilepictures
+    container_name: profilepictures-ms
     depends_on:
       - db
-      - proxy
     links:
       - db
     environment:
       VIRTUAL_HOST: profilepictures.local
+    ports:
+      - "8080:8080"
 
   db:
     image: mongo:3.3
