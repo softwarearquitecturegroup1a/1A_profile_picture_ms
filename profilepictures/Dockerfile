@@ -6,13 +6,13 @@ RUN go get gopkg.in/mgo.v2
 RUN go get github.com/gorilla/mux
 
 # copy the local package files to the container workspace
-ADD . /go/src/github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepictures
+ADD . /go/src/github.com/softwarearquitecturegroup1a/profilepictures/profilepictures
 
 # Setting up working directory
-WORKDIR /go/src/github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepictures
+WORKDIR /go/src/github.com/softwarearquitecturegroup1a/profilepictures/profilepictures
 
 # Build the profilepictures command inside the container.
-RUN go install github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepictures
+RUN go install github.com/softwarearquitecturegroup1a/profilepictures/profilepictures
 
 # Run the profilepictures microservice when the container starts.
 ENTRYPOINT /go/bin/profilepictures

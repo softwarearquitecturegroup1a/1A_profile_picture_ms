@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepictures/common"
-	"github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepictures/data"
+	"github.com/softwarearquitecturegroup1a/profilepictures/profilepictures/common"
+	"github.com/softwarearquitecturegroup1a/profilepictures/profilepictures/data"
 	"gopkg.in/mgo.v2"
 )
 

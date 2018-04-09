@@ -3,7 +3,7 @@ package controllers
 import (
 	"gopkg.in/mgo.v2"
 
-	"github.com/softwarearquitecturegroup1a/1A_profile_picture_ms/profilepictures/common"
+	"github.com/softwarearquitecturegroup1a/profilepictures/profilepictures/common"
 )
 
 // Struct used for maintaining HTTP Request Context

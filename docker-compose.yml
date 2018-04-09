@@ -2,7 +2,7 @@ version: '2'
 services:
   proxy:
     image: jwilder/nginx-proxy
-    container_name: profile_picture_ms
+    container_name: profile-picture-ms
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
     ports:
@@ -10,7 +10,7 @@ services:
 
   profilepictures:
     build: ./profilepictures
-    image: profilepictures_ms/profilepictures
+    image: profilepictures/profilepictures
     container_name: profilepictures-profilepictures
     depends_on:
       - db

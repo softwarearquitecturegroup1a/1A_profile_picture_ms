@@ -7,7 +7,7 @@ import (
 )
 
 type (
-	Profilepicture struct {
+	ProfilePicture struct {
 		Id        bson.ObjectId `bson:"_id,omitempty" json:"id"`
 		IdStudent string        `json:"Student"`
 		UrlPhoyo  string        `json:"Url"`
