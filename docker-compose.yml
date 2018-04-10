@@ -11,7 +11,7 @@ services:
     environment:
       VIRTUAL_HOST: profilepictures.local
     ports:
-      - "8080:8080"
+      - "3003:8080"
 
   db:
     image: mongo:3.3
