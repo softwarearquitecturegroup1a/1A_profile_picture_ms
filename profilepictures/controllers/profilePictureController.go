@@ -82,7 +82,7 @@ func GetProfilePictureById(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	j, err := json.Marshal(ProfilePictureResource{Data: ProfilePicture})
+	j, err := json.Marshal(ProfilePicture)
 	if err != nil {
 		common.DisplayAppError(w, err, "An unexpected error has occurred", 500)
 		return
